@@ -14,6 +14,7 @@ N*  insertAtPosition(N* root,int pos,int info)
   int index=1;
   N* temp = root;
   N* new=(N*) malloc (sizeof(N));
+ new->link=NULL:
   if(new==NULL){
    printf("Memory cant allocated\n");
    exit(0);
@@ -43,6 +44,7 @@ N*  insertAfterNode(N* root,int node_val,int info)
 {
   N* temp = root;
   N* new=(N*) malloc (sizeof(N));
+  new->link=NULL;
   if(new==NULL){
    printf("Memory cant allocated\n");
    exit(0);
